@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Calculator API
+  version: 1.0.0
+paths:
+  /api/Login:
+    post:
+      tags:
+      - "Login"
+      summary: "Logs in a user and returns a JWT token"
+      operationId: "Login"
+      requestBody:
+        description: "The user's login information"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserModel"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  token:
+                    type: "string"
+  /calculate:
+    post:
+      summary: Perform a calculation
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: header
+          name: operation
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                num1:
+                  type: number
+                num2:
+                  type: number
+      responses:
+        '200':
+          description: Calculation result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: number
+components:
+  securitySchemes:
+    BearerAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT    # optional, arbitrary value for documentation purposes
+  schemas:
+    UserModel:
+      type: "object"
+      properties:
+        Username:
+          type: "string"
+        Password:
+          type: "string"

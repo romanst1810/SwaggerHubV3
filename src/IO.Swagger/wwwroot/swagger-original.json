@@ -1,0 +1,138 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Calculator API",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/RONAN1810_1/CalculatorV2/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  } ],
+  "paths" : {
+    "/api/Login" : {
+      "post" : {
+        "tags" : [ "Login" ],
+        "summary" : "Logs in a user and returns a JWT token",
+        "operationId" : "Login",
+        "requestBody" : {
+          "description" : "The user's login information",
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UserModel"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Successful operation",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/inline_response_200"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calculate" : {
+      "post" : {
+        "summary" : "Perform a calculation",
+        "parameters" : [ {
+          "name" : "operation",
+          "in" : "header",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/calculate_body"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Calculation result",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/inline_response_200_1"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "BearerAuth" : [ ]
+        } ]
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "UserModel" : {
+        "type" : "object",
+        "properties" : {
+          "Username" : {
+            "type" : "string"
+          },
+          "Password" : {
+            "type" : "string"
+          }
+        }
+      },
+      "inline_response_200" : {
+        "type" : "object",
+        "properties" : {
+          "token" : {
+            "type" : "string"
+          }
+        },
+        "example" : {
+          "token" : "token"
+        }
+      },
+      "calculate_body" : {
+        "type" : "object",
+        "properties" : {
+          "num1" : {
+            "type" : "number"
+          },
+          "num2" : {
+            "type" : "number"
+          }
+        }
+      },
+      "inline_response_200_1" : {
+        "type" : "object",
+        "properties" : {
+          "result" : {
+            "type" : "number"
+          }
+        },
+        "example" : {
+          "result" : 0.8008281904610115
+        }
+      }
+    },
+    "securitySchemes" : {
+      "BearerAuth" : {
+        "type" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT"
+      }
+    }
+  }
+}

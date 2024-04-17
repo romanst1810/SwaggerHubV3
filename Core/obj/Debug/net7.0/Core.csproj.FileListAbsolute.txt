@@ -1,0 +1,12 @@
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\bin\Debug\net7.0\Core.deps.json
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\bin\Debug\net7.0\Core.dll
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\bin\Debug\net7.0\Core.pdb
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.dll
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\refint\Core.dll
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\Core.pdb
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\_000 ВОПРОСЫ Code Examples & Interview Questions\10 2024 Поиск работы Домашнии задания\SwaggerHubV3\Core\obj\Debug\net7.0\ref\Core.dll
