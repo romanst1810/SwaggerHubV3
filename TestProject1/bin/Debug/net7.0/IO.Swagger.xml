@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IO.Swagger</name>
+    </assembly>
+    <members>
+        <member name="T:IO.Swagger.Attributes.ValidateModelStateAttribute">
+            <summary>
+            Model state validation attribute
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Attributes.ValidateModelStateAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Called before the action method is invoked
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:IO.Swagger.Controllers.DefaultApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Controllers.DefaultApiController.CalculatePost(IO.Swagger.Models.CalculateBody,System.String)">
+            <summary>
+            Perform a calculation
+            </summary>
+            <param name="body"></param>
+            <param name="operation"></param>
+            <response code="200">Calculation result</response>
+        </member>
+        <member name="T:IO.Swagger.Controllers.LoginApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Controllers.LoginApiController.Login(Core.Models.UserModel)">
+            <summary>
+            Logs in a user and returns a JWT token
+            </summary>
+            <param name="body">Username="Test" , Password="Test" I have just one user for testing</param>
+            <response code="200">Successful operation</response>
+        </member>
+        <member name="T:IO.Swagger.Filters.BasePathFilter">
+            <summary>
+            BasePath Document Filter sets BasePath property of Swagger and removes it from the individual URL paths
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Filters.BasePathFilter.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="basePath">BasePath to remove from Operations</param>
+        </member>
+        <member name="P:IO.Swagger.Filters.BasePathFilter.BasePath">
+            <summary>
+            Gets the BasePath of the Swagger Doc
+            </summary>
+            <returns>The BasePath of the Swagger Doc</returns>
+        </member>
+        <member name="M:IO.Swagger.Filters.BasePathFilter.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            Apply the filter
+            </summary>
+            <param name="swaggerDoc">OpenApiDocument</param>
+            <param name="context">FilterContext</param>
+        </member>
+        <member name="T:IO.Swagger.Filters.GeneratePathParamsValidationFilter">
+            <summary>
+            Path Parameter Validation Rules Filter
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Filters.GeneratePathParamsValidationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="operation">Operation</param>
+            <param name="context">OperationFilterContext</param>
+        </member>
+        <member name="T:IO.Swagger.Models.CalculateBody">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.CalculateBody.Num1">
+            <summary>
+            Gets or Sets Num1
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.CalculateBody.Num2">
+            <summary>
+            Gets or Sets Num2
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.CalculateBody.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.CalculateBody.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.CalculateBody.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.CalculateBody.Equals(IO.Swagger.Models.CalculateBody)">
+            <summary>
+            Returns true if CalculateBody instances are equal
+            </summary>
+            <param name="other">Instance of CalculateBody to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.CalculateBody.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Models.InlineResponse200">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.InlineResponse200.Token">
+            <summary>
+            Gets or Sets Token
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse200.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse200.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse200.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse200.Equals(IO.Swagger.Models.InlineResponse200)">
+            <summary>
+            Returns true if InlineResponse200 instances are equal
+            </summary>
+            <param name="other">Instance of InlineResponse200 to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse200.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Models.InlineResponse2001">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.InlineResponse2001.Result">
+            <summary>
+            Gets or Sets Result
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse2001.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse2001.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse2001.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse2001.Equals(IO.Swagger.Models.InlineResponse2001)">
+            <summary>
+            Returns true if InlineResponse2001 instances are equal
+            </summary>
+            <param name="other">Instance of InlineResponse2001 to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.InlineResponse2001.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:IO.Swagger.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Create the web host builder.
+            </summary>
+            <param name="args"></param>
+            <returns>IWebHostBuilder</returns>
+        </member>
+        <member name="T:IO.Swagger.Security.BearerAuthenticationHandler">
+            <summary>
+            class to handle bearer authentication.
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Security.BearerAuthenticationHandler.SchemeName">
+            <summary>
+            scheme name for authentication handler.
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Security.BearerAuthenticationHandler.HandleAuthenticateAsync">
+            <summary>
+            verify that require authorization header exists.
+            </summary>
+        </member>
+        <member name="T:IO.Swagger.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="env"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:IO.Swagger.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:IO.Swagger.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+        </member>
+    </members>
+</doc>
